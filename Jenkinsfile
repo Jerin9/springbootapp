@@ -1,6 +1,6 @@
 pipeline {
     tools {
-        maven "Maven3"
+        maven "Maven-3.9.6"
     }
     agent any
         environment {
@@ -10,7 +10,7 @@ pipeline {
         stages {
             stage ('Checkout from git'){
                 steps {
-                    git branch: 'main', url: 'https://github.com/bkrrajmali/springbootapp.git'
+                    git branch: 'main', url: 'https://github.com/Jerin9/springbootapp.git'
             }
         }
         stage ('Maven Build'){
