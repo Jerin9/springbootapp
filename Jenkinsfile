@@ -1,6 +1,6 @@
 pipeline {
     tools {
-        maven "Maven-3.9.6"
+        maven "maven-3.9.6"
     }
     agent any
         environment {
