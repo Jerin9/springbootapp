@@ -3,7 +3,8 @@ pipeline {
         maven "maven-3.9.6"
     }
     
-    stages {
+    
+        stages {
             stage ('Checkout from git'){
                 steps {
                     git branch: 'main', url: 'https://github.com/Jerin9/springbootapp.git'
