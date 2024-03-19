@@ -2,6 +2,7 @@ pipeline {
     tools {
         maven "maven-3.9.6"
     }
+    agent any
         stages {
             stage ('Checkout from git'){
                 steps {
