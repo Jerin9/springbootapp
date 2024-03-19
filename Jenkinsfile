@@ -2,12 +2,8 @@ pipeline {
     tools {
         maven "maven-3.9.6"
     }
-    agent any
-        environment {
-            SCANNER_HOME= tool 'sonar-scanner'
-        }
     
-        stages {
+    stages {
             stage ('Checkout from git'){
                 steps {
                     git branch: 'main', url: 'https://github.com/Jerin9/springbootapp.git'
